@@ -1,38 +1,128 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f5ff;
+ 
+  color:brown;
+ 
+background-image: url('./images/keith-misner-h0Vxgz5tyXA-unsplash.jpg');
+ 
+  background-size: cover;
+ 
+  background-position: center;
+ 
+}
+/* App.css */
+
+.core-values {
+  background-color: rgba(255, 255, 255, 0.9);
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+}
+
+header,
+footer {
+  background-color: #007bff;
+  
+  color: #fff;
+ 
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.core-values {
+  background-color: rgba(255, 255, 255, 0.9);
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.opportunity-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.opportunity-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.opportunity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Dynamic shadow on hover */
+}
+
+.opportunity-details {
+  margin-top: 10px;
+}
+
+.point-calculator {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Dynamic shadow */
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.employer-login {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Dynamic shadow */
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+footer {
+  background-color:burlywood;
+  /* Blue footer background */
+  color: #fff;
+  /* White text color */
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Footer section colors */
+.footer-section1 {
+  background-color: #f3ff47;
+  /* Tomato color */
+}
+
+.footer-section2 {
+  background-color: #ff0062;
+  /* Gold color */
 }
